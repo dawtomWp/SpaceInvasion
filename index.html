@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space Invasion</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="start__modal" data-game-start-modal>
+      <h2>Space Invasion</h2>
+      <p>Press <span class='startSpan'>left & right</span> arrow to move</p>
+      <p>Press <span class='startSpan'>R</span> to use ultimate shot</p>
+      <p>Press <span class='startSpan'>enter</span> to shot</p>
+      <button class="start-game" data-start-game>Start game</button>
+
+    </div>
+    <div class="container" data-container>
+      <div class="spaceship" data-spaceship></div>
+      <section class="information">
+        <article class="information__content" data-score>Score: 0</article>
+        <article class="information__content" data-lives>Lives: 3</article>
+        <article class="information__content" data-ultimate>Doom Shot: 3</article>
+      </section>
+    </div>
+    <div class="modal hide" data-modal>
+      <div class="modal__content">
+        <p class="modal__text" data-score-info>
+          You loose! Start new game!
+        </p>
+        <button class="modal__button" data-button>New Game</button>
+      </div>
+    </div>
+    <script type="module" src="./js/Game.js"></script>
+  </body>
+</html>
